@@ -1,0 +1,19 @@
+1. Install anaconda 
+
+2. Download Microsoft Visual C++ Redistributable
+
+3. Create a folder for our project ()
+
+4. CD + Path of our folder
+
+5. Conda create --name chatbotenv python==3.7.6
+
+6. Conda activate chatbotenv
+
+7. Conda install ujson==2.0.3
+
+8. Conda install tensorflow==2.1.0
+
+9. pip install rasa==1.10.0
+
+10. rasa init

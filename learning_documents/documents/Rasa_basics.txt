@@ -1,0 +1,57 @@
+Chatbot: (Chat+Robot)
+	It is a conversational based framework which is used to improve relationship between customers and orgabnization.
+
+Types of chatbot:
+	1)Rule based Chatbot
+	2) Conversational AI based chatbot
+
+Diferent inputs of chatbot:
+	1)Voice
+	2)Text
+
+Advantages of chatbot:
+	1) Customer perspective: resuce time wastage, easy attain objectives
+	2) Business Perspective: less resource, Low cost, Easy maintenance, easy upgradation.
+
+Concepts of Chatbot:
+	1) Artifical intelligence
+	2) Machine Learning
+	3) Deep learning
+
+Chatbot Companies
+	1) Microsaoft Chtbot
+	2) IBM Chatbot
+	3) Amazon Chatbot
+	4) RASA chatbot(open source).
+
+
+RASA Chatbot:
+	Converationsla Based AI framework
+
+Concepts of RASA chatbot:
+	1) Intent: Predicts/ Understand customer needs( verbs)
+	2) Entity: Predicts/underdstand Customer data ( Nouns)
+	3) Actions: Its is operations section of NLU to solve Customer intent
+	4) Stories: It connects/create conversational based environments of Intents , responses
+	5) Domain: It helps bot to understand customer, business requirements.
+
+
+Tools of RASA
+	1) RASA NLU- Itent and Entity Extractins from User inputs for create a easy way to understand machine. (tracker, Pipleline, entity extractions)
+	2) RASA Core: Its is basically useful =to handle dialogue / conversational.(domain, storeis, nlu, responses)
+
+
+RASA Architechture:
+	Message IN-->Interpreter-->Tracker-->Policy-->Action-->tracker-->Message Out.
+
+Components of RASA architechture:
+	1) Message In: User iNput.
+	2) Interpreter: Defines Intent, extract from the user input.
+	3) Tracker: Track the previous user input.
+	4) Policy: defines track aPolicy and also performs actions.
+	5) Actions: Based on user input submit response and create user stories.
+	6) Message out: Shows output message.
+
+ 
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RASA Chatbot Integration HTML">
+    <title>RASA ChatBot</title>
+    <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+    <center><h1>Welcome to RASA ChatBot</h1></center>
+    <div id="webchat" role="main"></div>
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.5.0/lib/index.min.js"></script>
+    <script>
+      WebChat.default.init({
+        selector: "#webchat",
+        customData:{"language":"en"},
+        socketUrl: "http://localhost:5005",
+        socketPath: "/socket.io/",
+        title: "Welcome to RASA Chatbot!!!",
+        subtitle: "Interact with bot!!"
+      })
+    </script>
+</body>
+</html>

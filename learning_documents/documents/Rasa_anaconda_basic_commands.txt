@@ -1,0 +1,74 @@
+Default Path:
+	cd F:\pivot_chatbot\pivot_chatbot_codebase (Your Default Path)
+
+Commands to run bot initially after open anaconda prompt:
+
+  f:
+  
+	conda info --envs
+
+	Conda activate pivotchatBot
+
+	rasa shell
+
+Commands to run bot after doing changes on either intent or response:
+	rasa train
+
+	rasa shell
+
+
+Commands to run bot for Website integration:
+
+	rasa run --cors "*" --debug
+
+Website Integration:
+
+      1) In HTML body
+       <!DOCTYPE html>
+       <html lang="en">
+	<head>
+    	 <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="RASA Chatbot Integration HTML">
+         <title>RASA ChatBot</title>
+        </head>
+       <body>
+        <center><h1>Welcome to RASA ChatBot</h1></center>
+        <div id="webchat" role="main"></div>
+        <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.5.0/lib/index.min.js"></script>
+        <script>
+          WebChat.default.init({
+          selector: "#webchat",
+          customData:{"language":"en"},
+          socketUrl: "http://localhost:5005",
+          socketPath: "/socket.io/",
+          title: "your name",
+          subtitle: "first bot ever!"
+        })
+       </script>
+       </body>
+      </html>
+
+	2)In Credentials.yml
+	socketio:
+ 	 user_message_evt: user_uttered
+ 	 bot_message_evt: bot_uttered
+ 	 session_persistence: true
+
+
+Create Custom actions:
+
+	1) Create new Intent from nlu.md
+	2) Create new story for that intent in stories.md
+	3) In actions.py uncomment all python codes.
+	4) In domain.yml add new intent and also create actions section aloong with new action name .
+	5) In Credentials.yml, uncommnet actions endpoint and its url
+	6) rasa run actions 
+
+
+Create Public Server from localhost:
+	
+	1) Open ngrok website and create account for that website
+	2) Download ngrok.
+

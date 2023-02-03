@@ -1,0 +1,54 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - sorry
+  - custom_actions
+  - user_name
+  - covid_state_updates
+
+actions:
+  - first_custom_actions
+  - get_user_name
+  - get_covid_results
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+    buttons:
+    - title: "Great"
+      payload: "/mood_great"
+    - title: "Not Good"
+      payload: "/mood_unhappy"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+    buttons:
+    - title: "Yes"
+      payload: "/mood_great"
+    - title: "No"
+      payload: "/sorry"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_sorry:
+  - text: "I am afraid, I cannot answer you that. Let me know If I can help you with anything else"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
