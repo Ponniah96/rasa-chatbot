@@ -21,6 +21,10 @@ Commands to run bot for Website integration:
 
 	rasa run --cors "*" --debug
 
+Open new terminal go to the folder structure and run below Commands
+
+  rasa run actions
+
 Website Integration:
 
       1) In HTML body
